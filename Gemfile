@@ -9,6 +9,7 @@ gem 'pg'
 gem 'fog'
 gem 'rails_12factor'
 gem 'sass-rails',   '~> 3.2.3'
+gem 'foundation-rails'
 #gem 'unicorn'
 
 
