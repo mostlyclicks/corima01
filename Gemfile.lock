@@ -191,7 +191,7 @@ GEM
       refinerycms-core (= 2.1.5)
     routing-filter (0.3.1)
       actionpack
-    sass (3.4.9)
+    sass (3.2.19)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
@@ -230,5 +230,6 @@ DEPENDENCIES
   rails_12factor
   refinerycms (~> 2.1.0)
   refinerycms-acts-as-indexed (~> 1.0.0)
+  sass (~> 3.2.19)
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)
