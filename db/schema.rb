@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141201184759) do
+ActiveRecord::Schema.define(:version => 20141216192249) do
 
   create_table "refinery_images", :force => true do |t|
     t.string   "image_mime_type"
@@ -136,6 +136,31 @@ ActiveRecord::Schema.define(:version => 20141201184759) do
 
   add_index "refinery_users", ["id"], :name => "index_refinery_users_on_id"
   add_index "refinery_users", ["slug"], :name => "index_refinery_users_on_slug"
+
+  create_table "refinery_wheels", :force => true do |t|
+    t.string   "name"
+    t.integer  "wheel_image_id"
+    t.string   "rim_type"
+    t.string   "diameter"
+    t.string   "front_rear"
+    t.string   "type_of_use"
+    t.string   "width"
+    t.string   "profile"
+    t.string   "spoke_count"
+    t.string   "spoke_type"
+    t.string   "hub_model"
+    t.string   "hub_style"
+    t.string   "carbon_weave"
+    t.integer  "weight"
+    t.string   "max_air_pressure"
+    t.string   "model"
+    t.integer  "position"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+    t.string   "slug"
+  end
+
+  add_index "refinery_wheels", ["slug"], :name => "index_refinery_wheels_on_slug"
 
   create_table "seo_meta", :force => true do |t|
     t.integer  "seo_meta_id"
